@@ -34,7 +34,8 @@ a {
     align-items: center;
     padding: 15px 8rem;
     background-color: #fff;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 66;
 }
 
@@ -59,36 +60,38 @@ a {
     cursor: pointer;
 }
 
-.firsectionImage {
-    position: absolute;
-    padding: 20px 0;
-    width: 70%;
-    top: -150px;
-    right: -200px;
-    z-index: 1;
+.top-Section{
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mockupImage {
-    position: absolute;
-    top: -80px;
+    position: relative;
+    top: -50px;
     right: -120px;
-    z-index: 1;
-    width: 50%;
+    z-index: 33;
+    width: 90%;
 }
 
-.top-Section{
-    background-color: var(--Very-Light-Gray);
-    height: 79vh;
-}
+.firsectionImage {
+    position: absolute;
+    width: 70%;
+    top: -130px;
+    right: -200px;
+    z-index: 1;
+} 
 
 .firstSection{
-    width: 48%;
+    width: 50%;
     padding: 8rem;
 }
 
 .firstSection h1{
     font-size: 45px;
     font-weight: 300;
+    line-height: 1;
     color: var(--Dark-Blue);
 }
 
@@ -112,6 +115,8 @@ a {
 .secondSecond {
     padding: 4rem  7rem;
     background-color: var(--Light-Grayish-Blue);
+    position: relative;
+    top: -210px;
 }
 
 .secondSectionText{
@@ -154,6 +159,7 @@ a {
 
 .thirdSection {
     padding: 5rem  7rem;
+    margin-top: -20%;
     background-color: var(--Very-Light-Gray);
 }
 
@@ -249,5 +255,55 @@ a {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width:992px) {
+    .mockupImage {
+        right: 0px;
+        top: -20px;
+        width: 100%;
+    }
+    
+    .firsectionImage {
+        right: 0px;
+        width: 65%;
+    }
+    
+    .firstSection{
+        width: 70%;
+        padding: 3rem;
+    }
+
+    .secondSecond {
+        top: -120px;
+        padding:10rem 4rem;
+    }
+
+    .secondSectionText{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .secondSectionIcons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .thirdSectionIcon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 100px;
+    }
+
+    .thirdSection {
+        padding: 5rem  4rem;
+        margin-top: -10%;
+    }
 }
 
