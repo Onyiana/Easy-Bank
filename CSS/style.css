@@ -186,8 +186,9 @@ a {
     gap: 30px;
 }
 
-.thirdSectionIcon img{
-   margin: 20px 0;
+.thirdSectionIcon div{
+    box-shadow: 3px 3px 5px rgb(219, 219, 219);
+    padding-bottom: 20px;
 }
 
 .thirdSectionIcon h3{
@@ -195,6 +196,7 @@ a {
     font-size: 20px;
     font-weight: 400;
     color: var(--Dark-Blue);
+    padding: 0 20px;
 }
 
 .thirdSectionIcon h3:hover{
@@ -205,6 +207,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     color: var(--Grayish-Blue);
+    padding: 0 20px;
 }
 
 .footerSection {
@@ -421,7 +424,6 @@ a {
 
     .navbar {
         padding: 15px 2rem;
-        gap: 9rem;
         align-items: center;
         justify-content: space-between;
     }
