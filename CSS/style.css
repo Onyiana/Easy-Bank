@@ -8,6 +8,15 @@
 html, body{
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.blur{
+    filter: blur(3px);
+}
+
+.hideScroll{
+    overflow-y: hidden;
 }
 
 :root {
@@ -261,6 +270,13 @@ a {
     display: none;
 }
 
+.hamburger{
+    color: black;
+    font-size: 27px;
+    cursor: pointer;
+    display: none;
+}
+
 @media screen and (max-width:992px) {
     .mockupImage {
         right: 0px;
@@ -370,6 +386,50 @@ a {
         justify-content: center;
         text-align: center;
         margin: 10px 0;
+    }
+
+     /* This is used to style the navigation bar */
+     .hamburger{
+        display: block;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
+    .ri-close-circle-fill{
+        display: none;
+    }
+
+    /* Styling the navlinks and navbar on smaller screen. */
+    .navlinks{
+        background-color:#fff;
+        flex-direction: column;
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        right: -50%;
+        left: -50%;
+        transform: translate(-50%, 25%);
+        z-index: 1;
+        padding: 2rem;
+        transition: .5s;
+        gap: 25px;
+        border-radius: 10px;
+        box-shadow: 1px 3px 5px rgb(224, 221, 221);
+    }
+
+    .navbar {
+        padding: 15px 2rem;
+        gap: 9rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navlinks a{
+      color: var(--Dark-Blue);
+      font-weight: 700;
+      font-size: 17px;  
     }
 }
 
