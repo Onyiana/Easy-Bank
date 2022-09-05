@@ -419,7 +419,7 @@ a {
         transition: .5s;
         gap: 25px;
         border-radius: 10px;
-        box-shadow: 1px 3px 5px rgb(224, 221, 221);
+        box-shadow: 1px 3px 200px rgb(17, 28, 90);
     }
 
     .navbar {
